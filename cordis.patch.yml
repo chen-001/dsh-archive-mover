@@ -1,0 +1,8 @@
+# dsh-archive-mover bundle 层：插入归档会话冷存插件行。
+# dryRun: true = 演练模式，reconcile 只打印"会搬多少个"不真动文件；
+# 验证后改 false（改本文件触发 bundle 层 include.update 生效，免重启）。
+- insert:
+    - id: dsh-archive-mover
+      name: '@dsh-external/dsh-archive-mover'
+      config:
+        dryRun: false
